@@ -123,5 +123,8 @@ Clicking "Save my system for later" writes the current selections and activeVari
 - No animations on accordion open/close — kept it instant for snappy feel. Could add a transition in a future pass.
 - No error boundaries — for a prototype of this size, not needed; would add for production.
 
+## Deployment
+The app is deployed on Vercel. You can access it at https://bundle-builder-sepia.vercel.app/
+
 ## Thanks
 Thanks for the well-scoped take-home — it was a fun build! Happy to walk through any of the decisions above in a follow-up.
