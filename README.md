@@ -12,8 +12,8 @@ A frontend take-home prototype: a multi-step bundle builder with a live review p
 ### Install & Start
 ```bash
 # Clone the repo
-git clone <your-repo-url>
-cd <repo-folder>
+git clone https://github.com/maikimagdy/bundle-builder
+cd bundle-builder
 
 # Install dependencies
 npm install
