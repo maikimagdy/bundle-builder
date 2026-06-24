@@ -1,0 +1,281 @@
+@import "tailwindcss";
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Gilroy-SemiBold, sans-serif;
+    }
+}
+
+/* ============================================
+   📱 MOBILE TWEAKS — only applies < 768px
+   ============================================ */
+@media (max-width: 767px) {
+    .variant-chip {
+        padding: 4px 8px !important;
+        gap: 4px !important;
+    }
+
+    .variant-chip span {
+        font-size: 12px !important;
+    }
+
+    .mx-auto.max-w-7xl::before {
+        content: "Let's get started!";
+        display: block;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        color: #111;
+        padding: 16px 4px 8px;
+        font-family: Gilroy-SemiBold, sans-serif;
+        margin-bottom: 12px;
+    }
+
+    .mx-auto.max-w-7xl {
+        padding-left: 4px !important;
+        padding-right: 4px !important;
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+
+    .p-5 {
+        padding: 12px !important;
+    }
+
+    .p-4 {
+        padding: 10px !important;
+    }
+
+    .px-5 {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .py-4 {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    h2.text-2xl {
+        font-size: 18px !important;
+    }
+
+    h3.text-xl {
+        font-size: 16px !important;
+    }
+
+    /* Product titles — one line */
+    h3.text-base {
+        font-size: 11px !important;
+        line-height: 1.2 !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    .flex-1 {
+        min-width: 0 !important;
+    }
+
+    .gap-3 {
+        gap: 6px !important;
+    }
+
+    .gap-2 {
+        gap: 4px !important;
+    }
+
+    .text-sm {
+        font-size: 12px !important;
+    }
+
+    .text-xs {
+        font-size: 10px !important;
+    }
+
+    .text-2xl {
+        font-size: 20px !important;
+    }
+
+    button.w-7 {
+        width: 24px !important;
+        height: 24px !important;
+        font-size: 12px !important;
+    }
+
+    .w-6 {
+        width: 18px !important;
+        font-size: 12px !important;
+    }
+
+    .text-sm.font-bold,
+    .text-sm.font-semibold {
+        font-size: 11px !important;
+        white-space: nowrap !important;
+    }
+
+    .gap-4 {
+        gap: 2px !important;
+    }
+
+    .w-20.h-20 {
+        width: 87px !important;
+        height: 87px !important;
+    }
+
+    .px-2 {
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+    }
+
+    .text-xs.px-2\.5 {
+        font-size: 9px !important;
+        padding: 2px 8px !important;
+    }
+
+    .accordion-content {
+        flex-direction: column !important;
+    }
+
+
+}
+
+/* ============================================
+   📱 TABLET / NEST HUB — 768px to 1279px
+   Matches Figma Frame 1736 (stacked, 5-in-row)
+   ============================================ */
+@media (min-width: 768px) and (max-width: 1279px) {
+
+
+    .product-card .w-20.h-20,
+    .bg-white.rounded-lg.border-2 .w-20.h-20 {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    /* More card padding */
+    .product-card,
+    .bg-white.rounded-lg.border-2 {
+        padding: 14px !important;
+    }
+
+    /* Slightly bigger title */
+    .product-card h3.text-base {
+        font-size: 14px !important;
+    }
+
+    .discount-badge {
+        position: relative !important;
+        top: -30px !important;
+        width: 60px !important;
+    }
+
+    .guarantee-badge {
+        border: none !important;
+    }
+
+    .mx-auto.max-w-7xl {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    /* Compact product cards since 5 are in a row */
+    .bg-white.rounded-lg.border-2 {
+        gap: 8px !important;
+        flex-direction: column !important;
+        text-align: left !important;
+    }
+
+    /* Left column (badge+image) goes to top, narrower */
+    .bg-white.rounded-lg.border-2>.flex.flex-col.items-center.gap-2.shrink-0.w-20 {
+        width: 100% !important;
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        gap: 8px !important;
+    }
+
+    .w-20.h-20 {
+        width: 131px !important;
+        height: 131px !important;
+    }
+
+    /* Product titles */
+    h3.text-base {
+        font-size: 13px !important;
+        line-height: 1.25 !important;
+    }
+
+    /* Descriptions */
+    .bg-white.rounded-lg.border-2 p {
+        font-size: 11px !important;
+        line-height: 1.35 !important;
+    }
+
+    /* Variant chips */
+    .px-2 {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    /* Stepper */
+    button.w-7 {
+        width: 24px !important;
+        height: 24px !important;
+        font-size: 12px !important;
+    }
+
+    /* Price */
+    .text-sm.font-bold,
+    .text-sm.font-semibold {
+        font-size: 11px !important;
+        white-space: nowrap !important;
+    }
+
+    /* Badge */
+    .text-xs.px-2\.5 {
+        font-size: 9px !important;
+        padding: 2px 6px !important;
+    }
+
+    .flex-1 {
+        min-width: 0 !important;
+    }
+
+    /* "Next: ..." button */
+    button.w-60 {
+        width: 240px !important;
+    }
+
+    /* Review panel — split 2 cols internally, titles still readable */
+    .text-2xl {
+        font-size: 22px !important;
+    }
+
+    .variant-chip {
+        padding: 4px 3px !important;
+    }
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 885px) {
+    .accordion-content {
+        flex-wrap: wrap !important;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .review-panel-grid {
+        grid-template-columns: 1fr 1fr !important;
+    }
+}

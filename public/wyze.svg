@@ -1,0 +1,68 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 131 166"
+    width="131"
+    height="166"
+>
+    <!-- Shield -->
+    <path
+        d="
+        M 65.5 22
+        L 115 38
+        L 115 91
+        C 115 109 103 125 88 138
+        C 80 145 72 151 65.5 157
+        C 59 151 51 145 43 138
+        C 28 125 16 109 16 91
+        L 16 38
+        Z"
+        fill="#E7EFFD"
+        stroke="#0046C7"
+        stroke-width="3"
+        stroke-linejoin="round"
+    />
+
+    <!-- WYZE -->
+    <g
+        fill="none"
+        stroke="#0046C7"
+        stroke-width="2.4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+
+        <!-- W -->
+        <path d="
+            M 24 74
+            L 30 92
+            L 37 79
+            L 44 92
+            L 50 74
+        "/>
+
+        <!-- Y -->
+        <path d="
+            M 53 74
+            L 61 83
+            L 69 74
+        "/>
+        <path d="
+            M 61 83
+            L 61 92
+        "/>
+
+        <!-- Z -->
+        <path d="
+            M 72 74
+            L 87 74
+            L 72 92
+            L 87 92
+        "/>
+
+        <!-- Stylized E -->
+        <path d="M 91 74 L 105 74"/>
+        <path d="M 91 83 L 103 83"/>
+        <path d="M 91 92 L 105 92"/>
+
+    </g>
+</svg>
