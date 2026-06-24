@@ -32,7 +32,7 @@ function CheckoutSummary({
             <div className="flex items-center justify-between gap-4">
                 {/* Guarantee image */}
                 <img
-                    src="/100%-logo.png"
+                    src="/wyze-satisfaction.png"
                     alt="100% Wyze satisfaction guarantee"
                     className="w-20 h-20 object-contain shrink-0"
                 />
