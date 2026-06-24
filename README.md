@@ -87,9 +87,6 @@ Subscriptions are recurring charges and shouldn't be silently added to a cart. T
 2. "Let's get started!" header on mobile only
 Added via a CSS pseudo-element scoped to < 768px. Gives mobile users a clear entry point without cluttering desktop.
 
-3. All accordion steps closed on mobile by default
-Mobile screens are short — defaulting all steps closed prevents the user from drowning in content on load. Desktop keeps Step 1 open as per Figma.
-
 4. Smooth scroll-to-step on mobile
 When a user opens an accordion step on mobile, the step smoothly scrolls into view so they don't have to hunt for the newly expanded content. Desktop doesn't need this — content is already visible.
 
