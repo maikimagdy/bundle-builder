@@ -87,27 +87,27 @@ Subscriptions are recurring charges and shouldn't be silently added to a cart. T
 2. "Let's get started!" header on mobile only
 Added via a CSS pseudo-element scoped to < 768px. Gives mobile users a clear entry point without cluttering desktop.
 
-4. Smooth scroll-to-step on mobile
+3. Smooth scroll-to-step on mobile
 When a user opens an accordion step on mobile, the step smoothly scrolls into view so they don't have to hunt for the newly expanded content. Desktop doesn't need this — content is already visible.
 
-5. ProductCard adapts its orientation
+4. ProductCard adapts its orientation
 On large desktop: image LEFT + content RIGHT (horizontal)
 On smaller screens: image TOP + content BELOW (vertical)
 This keeps cards readable whether they're 600px wide (desktop) or 180px wide (tablet 5-in-a-row).
 
-6. Review panel shows variant-specific images
+5. Review panel shows variant-specific images
 If a user selects the "Black" variant of a camera, the review thumbnail shows the black image — not the default product image. Helps users visually confirm their choices.
 
-7. Variant name displayed next to product title in review
+6. Variant name displayed next to product title in review
 E.g., Wyze Cam v4 (White) instead of just Wyze Cam v4. Especially useful when multiple variants of the same product are in the cart.
 
-8. Internal 2-column split in review panel (768–885px only)
+7. Internal 2-column split in review panel (768–885px only)
 At small tablet widths, the review panel splits internally — product list LEFT, checkout summary RIGHT — to use horizontal space efficiently. Outside this range it's a single column.
 
-9. Pricing math is calculated dynamically
+8. Pricing math is calculated dynamically
 All line totals and grand totals are computed from unit prices in products.json (unitPrice × quantity). Some values in the Figma reference appeared to be design placeholders that didn't mathematically reconcile (e.g., per-line totals didn't match unit price × quantity); the implementation uses consistent calculated math throughout.
 
-10. Monthly financing estimate uses subtotal ÷ 12
+9. Monthly financing estimate uses subtotal ÷ 12
 Standard Affirm-style financing term. The Figma value ($19.19/mo) appeared to be a placeholder that didn't divide cleanly into any displayed total; the implementation uses a transparent subtotal ÷ 12 calculation.
 
 ## Persistence
