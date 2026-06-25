@@ -3,7 +3,10 @@ function VariantChip({ variant, isActive, onClick }) {
         <button
             type="button"
             onClick={onClick}
-            className={`variant-chip flex items-center lg:gap-1  lg:px-2.5  w-auto  rounded-sm border transition cursor-pointer
+            style={{
+                paddingLeft: "1px"
+            }}
+            className={`variant-chip flex items-center lg:gap-1  lg:px-2.5   w-auto  rounded-sm border transition cursor-pointer
         ${isActive
                     ? "border-[#4E2FD2] bg-white"
                     : "border-gray-200 bg-white hover:border-gray-300"
